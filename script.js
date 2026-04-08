@@ -11,9 +11,16 @@ document.getElementById("formaAdocao").addEventListener("submit", function(e){
     let Pet = document.querySelector('input[name = "Pet"]:checked');
     let horas = document.getElementById("horas").value;
     let motivo = document.getElementById("motivo").value;
+
+
+    if(nome.legth < 3) return alert("Nome Inválido");
+    if(email.include(@)) return alert("Email Inválido");
+    if(moradia.include(this.querySelector)) return alert("Faltou Prencher");
+    if(quintal.include(this.querySelector)) return alert("Faltou Prencher") 
+    if(CPF < 11) return alert("Inválido")
+    if(Idade < 18) return alert("Inválido")
+    if(Telefone < 11) return alert("Inválido")
     
 
-    if(nome.legth < 3) return alert("nome inválido");
-
-    document.getElementById("resultado").innerHTML = "cadastro realizado comsucesso!<br>"+ "nome:" + nome;
+    document.getElementById("resultado").innerHTML = "cadastro realizado com sucesso!<br>"+ "nome:" + nome;
 })
