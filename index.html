@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoção</title>
+</head>
+<body>
+    
+    <h2>formulário de Adoção</h2>
+
+    <form id="formadocao">
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="digite seu nome">
+        <br>
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="digite seu email">
+        <br>
+        <label for="cidade">Cidade</label>
+        <input type="text"  id="cidade" placeholder="Cidade">
+        <br>
+        <label for="CPF">CPF</label>
+        <input type="text" id="CPF" placeholder="Digite o seu o CPF">
+        <br>
+        <label for="Telefone">Telefone</label>
+        <input type="text" id="Telefone" placeholder="Digite o seu Telefone">
+        <br>
+        <label for="Idade">Idade</label>
+        <input type="text" id="Idade" placeholder="Digite a sua Idade">
+        <br>
+        <label for="moradia" >moradia</label>
+        <select name="moradia" id="moradia">
+            <option value="">selecione</option>
+            <option value="casa">casa</option>
+            <option value="aprtamento">apartamento</option>
+        </select>
+        <br>
+        <label for="quintal">possui Quintal</label>
+        <input type="radio" name="quintal" value="sim">sim
+        <input type="radio" name="quintal" value="não">não
+        <br>
+        <label for="Pet">já teve Pets</label>
+        <input type="radio" name="Pet" value="sim">sim 
+        <input type="radio" name="Pet" value="não">não 
+        <br>
+        <label for="horas">quantas horas o animal ficara sozinho por dia?</label>
+        <br>
+        <input type="text"  id="horas" placeholder="Quantas horas?">
+        <br>
+        <label for="motivo">porque você quer Adotar um animal?</label>
+        <br>
+        <textarea name="" id="motivo" rows="4" cols="30"></textarea>
+        <br>
+        <label for="termos">Aceitar Termos
+            <input type="checkbox"  value="termos" placeholder="Aceitar Termos">
+        </label>
+        <br>
+
+        <button type="submit">enviar</button>        
+    
+    
+</form>
+
+<div id="resultado"></div>
+<script src="scripts/script.js"></script>
+
+</body>
+</html>
